@@ -6,8 +6,11 @@
 			echo $_SERVER['REQUEST_URI'];
 			Request::retrieve();
 			$controller=Request::getCont();
-			echo $controller."<br>";
+			Coder::code($controller);
+			//echo $controller."<br>";
 			$action=Request::getAct();
+			Coder::code($action);
 			$params=Request::getparams();
+			Coder::code($params);
 		}
 	}
